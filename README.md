@@ -33,8 +33,8 @@ If you have various suggestions, questions or want to discuss things with our co
 
 ## Show your support
 
-We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and
-also be sure to contribute, if you're interested!
+We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and also be sure to
+contribute, if you're interested!
 
 ## ▶ Links
 
@@ -44,6 +44,5 @@ also be sure to contribute, if you're interested!
 ## License
 
 - [GPL V3](https://github.com/janaSunrise/nextjs-quickstart-template/blob/main/LICENSE)
-
 
 <p align="center">Made by janaSunrise with ❤</p>
