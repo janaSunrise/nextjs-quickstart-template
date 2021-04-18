@@ -43,7 +43,8 @@
 .title a:hover,
 .title a:focus,
 .title a:active {
-    text-decoration: underline;
+    text-decoration: none;
+    color: purple;
 }
 
 .title {

@@ -1,0 +1,18 @@
+version: '3.8'
+
+networks:
+  common-shared-network:
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    tty: true
+    environment:
+      PORT: 3000
+    restart: on-failure
+    networks:
+      - common-shared-network
