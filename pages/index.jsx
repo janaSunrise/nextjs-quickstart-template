@@ -16,7 +16,7 @@ const Home = () => {
 
                 <p className={styles.description}>
                     Get started by editing{' '}
-                    <code className={styles.code}>pages/index.js</code>
+                    <code className={styles.code}>pages/index.jsx</code>
                 </p>
 
                 <div className={styles.grid}>
