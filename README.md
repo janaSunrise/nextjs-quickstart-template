@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJS Quickstart Template
+
+A simple and easy boilerplate for your next NextJS project, to get you started in NO time.
 
 ## Getting Started
 
@@ -14,21 +16,34 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🤝 Contributing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contributions, issues and feature requests are welcome. After cloning & setting up project locally, you can just submit
+a PR to this repo and it will be deployed once it's accepted.
 
-## Learn More
+⚠️ It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your
+commit or the PR Created. Read [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.3/) before
+making the commit message.
 
-To learn more about Next.js, take a look at the following resources:
+## 💬 Get in touch
+
+If you have various suggestions, questions or want to discuss things with our community, Join our discord server!
+
+[![Discord](https://discordapp.com/api/guilds/695008516590534758/widget.png?style=shield)](https://discord.gg/cSC5ZZwYGQ)
+
+## Show your support
+
+We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and
+also be sure to contribute, if you're interested!
+
+## ▶ Links
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+- [GPL V3](https://github.com/janaSunrise/nextjs-quickstart-template/blob/main/LICENSE)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">Made by janaSunrise with ❤</p>
