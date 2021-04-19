@@ -105,6 +105,11 @@ const handleCssFrameworks = (framework) => {
             )
             break;
         case "materialize":
+            let output_mt = executeShellCmd("npm install materialize-css@next");
+            console.log(output_mt);
+
+            console.log("Installed it, Configure the code please.");
+
             break;
     }
 }
