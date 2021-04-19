@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+const { exec } = require("child_process");
+fs = require('fs');
 
 const parseCliArgs = (arguments, count=1) => {
     let totalArgsLen = count + 2;
@@ -19,7 +21,93 @@ const parseCliArgs = (arguments, count=1) => {
     return args;
 }
 
-const handleCssFrameworks = () => {}
+const executeShellCmd = (command) => {
+    exec(command, (error, stdout, stderr) => {
+        if (error) {
+            return `Error: ${error.message}`;
+        }
+
+        if (stderr) {
+            return `STD Error: ${stderr}`;
+        }
+
+        return `Output: ${stdout}`
+    });
+}
+
+const handleCssFrameworks = (framework) => {
+    switch (framework) {
+        case "bootstrap":
+            let output_bs = executeShellCmd("npm i bootstrap@next");
+            console.log(output_bs);
+
+            // Append BS import to global.scss
+            fs.appendFile(
+                "./styles/globals.scss",
+                "@import \"~bootstrap/scss/bootstrap\";",
+                (error) => {
+                    if (error) throw error;
+                }
+            )
+            break;
+        case "bulma":
+            let output_bl = executeShellCmd("npm install bulma");
+            console.log(output_bl);
+
+            // Add bulma conf
+            fs.appendFile(
+                "./styles/globals.scss",
+                "@import '~bulma/bulma';",
+                (error) => {
+                    if (error) throw error;
+                }
+            )
+            break;
+        case "tailwind":
+            let output_tw = executeShellCmd("npm install -D tailwindcss@latest postcss@latest autoprefixer@latest");
+            console.log(output_tw);
+
+            output_tw = executeShellCmd("npx tailwindcss init -p");
+            console.log(output_tw);
+
+            // Write Tailwind imports to globals.scss
+            fs.appendFile(
+                "./styles/globals.scss",
+                "@tailwind base;\n" +
+                "@tailwind components;\n" +
+                "@tailwind utilities;",
+                (error) => {
+                    if (error) throw error;
+                }
+            )
+
+            // Write the config
+            fs.writeFile(
+                "./tailwind.config.js",
+                "module.exports = {\n" +
+                "\n" +
+                "   purge: [],\n" +
+                "\n" +
+                "   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],\n" +
+                "    darkMode: false, // or 'media' or 'class'\n" +
+                "    theme: {\n" +
+                "      extend: {},\n" +
+                "    },\n" +
+                "    variants: {\n" +
+                "      extend: {},\n" +
+                "    },\n" +
+                "    plugins: [],\n" +
+                "  }\n" +
+                "\n",
+                (error) => {
+                    if (error) throw error;
+                }
+            )
+            break;
+        case "materialize":
+            break;
+    }
+}
 
 // Constants
 const valid_css_frameworks = ["bootstrap", "bulma", "tailwind", "materialize"];
