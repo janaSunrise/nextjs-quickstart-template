@@ -128,3 +128,5 @@ if(valid_css_frameworks.indexOf(framework.toLowerCase()) === -1){
     console.log(`Invalid CSS framework! Valid types are: ${valid_css_frameworks.join(", ")}`);
     process.exit(1);
 }
+
+handleCssFrameworks(framework.toLowerCase());
