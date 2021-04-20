@@ -1,5 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+import Meta from "../components/Meta";
+
+import favicon from '../public/favicon.ico';
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -9,7 +13,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+            <link rel="shortcut icon" href={favicon} />
+            <Meta title="NextJS Template" description="A simple and easy to use NextJS template!"/>
+        </Head>
         <body>
           <Main />
           <NextScript />

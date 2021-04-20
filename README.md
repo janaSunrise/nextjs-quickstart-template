@@ -61,6 +61,11 @@ This project has the following structure and folders to organize and quickly add
   }
   <Footer />;
   ```
+  
+  Meta tags and components is also located in the components. You can adjust to add / remove things as
+  you need it, and if you want to then customize the props and the things, visit `pages/_document.jsx`
+  and edit them.
+  
   This is applied to all the pages, and has a Navbar and Footer as designed in the components' folder. Change them to
   have them applied, or leave them to keep them empty. More info about it below.
 - `utils/` folder contains the utility methods for the project.
