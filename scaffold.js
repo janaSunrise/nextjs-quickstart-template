@@ -129,8 +129,9 @@ const handleCssFrameworks = (framework) => {
       );
       console.log(chakraui);
 
-      fs.appendFile(
+      fs.writeFile(
           "./pages/_app.jsx",
+          "import { ChakraProvider } from \"@chakra-ui/react\"\n" +
           "import Layout from \"../components/Layout\";\n" +
           "\n" +
           "import \"../styles/globals.scss\";\n" +
@@ -159,7 +160,7 @@ const handleCssFrameworks = (framework) => {
 };
 
 // Constants
-const validCssFrameworks = ["bootstrap", "bulma", "tailwind", "materialize"];
+const validCssFrameworks = ["bootstrap", "bulma", "tailwind", "materialize", "chakraui"];
 
 // Parse the args
 const validArgs = parseCliArgs(process.argv);
