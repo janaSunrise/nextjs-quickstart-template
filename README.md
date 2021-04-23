@@ -128,11 +128,6 @@ There is also configuration added for document in `pages/_document.js`, which al
 to be rendered. You can add things or remove things from the tags in `<Head />` or `<Body />` section as per your needs
 allowing you to freely change how the template is going to be rendered or customized.
 
-#### Environmental variables
-
-A `.env` loader has been added with configuration in `utils/env.js` to load the env config. Customize it as you want and
-Get started with using it!
-
 #### Scaffolding
 
 This is a way to integrate things quickly into the project with the help of a simple script. I have provided a script
