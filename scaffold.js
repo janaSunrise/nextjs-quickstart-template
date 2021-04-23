@@ -113,7 +113,13 @@ const handleCssFrameworks = (framework) => {
       const outputMT = executeShellCmd("npm install materialize-css@next");
       console.log(outputMT);
 
-      console.log("Installed it, Configure the code please.");
+      fs.appendFile(
+          "./styles/globals.scss",
+          "\n@import 'materialize-css/dist/css/materialize.min.css';\n",
+          (error) => {
+            if (error) throw error;
+          }
+      );
 
       break;
     }
