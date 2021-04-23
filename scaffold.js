@@ -123,6 +123,36 @@ const handleCssFrameworks = (framework) => {
 
       break;
     }
+    case "chakraui": {
+      const chakraui = executeShellCmd(
+          "npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4"
+      );
+      console.log(chakraui);
+
+      fs.appendFile(
+          "./pages/_app.jsx",
+          "import Layout from \"../components/Layout\";\n" +
+          "\n" +
+          "import \"../styles/globals.scss\";\n" +
+          "\n" +
+          "const MyApp = ({Component, pageProps}) => {\n" +
+          "    return (\n" +
+          "        <ChakraProvider>\n" +
+          "            <Layout>\n" +
+          "                <Component {...pageProps} />\n" +
+          "            </Layout>\n" +
+          "        </ChakraProvider>\n" +
+          "    );\n" +
+          "};\n" +
+          "\n" +
+          "export default MyApp;\n",
+          (error) => {
+            if (error) throw error;
+          }
+      );
+
+      break;
+    }
     default:
       break;
   }
