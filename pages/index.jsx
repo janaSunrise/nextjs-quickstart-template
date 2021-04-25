@@ -5,13 +5,13 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>NextJS Template</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js Template!</a>
         </h1>
 
         <p className={styles.description}>
