@@ -226,6 +226,6 @@ contribute, if you're interested!
 
 ## License
 
-- [GPL V3](https://github.com/janaSunrise/nextjs-quickstart-template/blob/main/LICENSE)
+- [Apache 2.0](https://github.com/janaSunrise/nextjs-quickstart-template/blob/main/LICENSE)
 
 <p align="center">Made by janaSunrise with ❤</p>
