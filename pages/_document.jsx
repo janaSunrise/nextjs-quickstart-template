@@ -12,8 +12,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-            <link rel="shortcut icon" href="/favicon.ico" />
-            <Meta title="NextJS Template" description="A simple and easy to use NextJS template!" author="Sunrit Jana"/>
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <Meta
+            title="NextJS Template"
+            description="A simple and easy to use NextJS template!"
+            author="Sunrit Jana"
+          />
         </Head>
         <body>
           <Main />

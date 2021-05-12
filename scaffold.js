@@ -114,27 +114,27 @@ const handleCssFrameworks = (framework) => {
       console.log(outputMT);
 
       fs.appendFile(
-          "./styles/globals.scss",
-          "\n@import 'materialize-css/dist/css/materialize.min.css';\n",
-          (error) => {
-            if (error) throw error;
-          }
+        "./styles/globals.scss",
+        "\n@import 'materialize-css/dist/css/materialize.min.css';\n",
+        (error) => {
+          if (error) throw error;
+        }
       );
 
       break;
     }
     case "chakraui": {
       const chakraui = executeShellCmd(
-          "npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4"
+        "npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4"
       );
       console.log(chakraui);
 
       fs.writeFile(
-          "./pages/_app.jsx",
-          "import { ChakraProvider } from \"@chakra-ui/react\"\n" +
-          "import Layout from \"../components/Layout\";\n" +
+        "./pages/_app.jsx",
+        'import { ChakraProvider } from "@chakra-ui/react"\n' +
+          'import Layout from "../components/Layout";\n' +
           "\n" +
-          "import \"../styles/globals.scss\";\n" +
+          'import "../styles/globals.scss";\n' +
           "\n" +
           "const MyApp = ({Component, pageProps}) => {\n" +
           "    return (\n" +
@@ -147,9 +147,9 @@ const handleCssFrameworks = (framework) => {
           "};\n" +
           "\n" +
           "export default MyApp;\n",
-          (error) => {
-            if (error) throw error;
-          }
+        (error) => {
+          if (error) throw error;
+        }
       );
 
       break;
@@ -160,7 +160,13 @@ const handleCssFrameworks = (framework) => {
 };
 
 // Constants
-const validCssFrameworks = ["bootstrap", "bulma", "tailwind", "materialize", "chakraui"];
+const validCssFrameworks = [
+  "bootstrap",
+  "bulma",
+  "tailwind",
+  "materialize",
+  "chakraui",
+];
 
 // Parse the args
 const validArgs = parseCliArgs(process.argv);
