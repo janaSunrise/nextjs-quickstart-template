@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.jsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.jsx`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as
 [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
@@ -87,7 +87,7 @@ In `components/` folder, we'll have a layout Components which will return follow
 ```
 
 To have navbar, footer for each page, we'll add them, Remember `Navbar.jsx` and `Footer.jsx` are
-components too in components folder, which we import in `Layout.jsx` and use, Then in `pages/_app.js`
+components too in components folder, which we import in `Layout.jsx` and use, Then in `pages/_app.jsx`
 which contains the basic structure of an App.
 
 By default, it's like this
@@ -126,7 +126,7 @@ footer to keep things DRY.
 Edit the `Navbar.jsx` and `Footer.jsx` to update the Navbar and Footer, As the layout is defined,
 they're Auto added to all the pages.
 
-There is also configuration added for document in `pages/_document.js`, which also has configuration for the HTML pages
+There is also configuration added for document in `pages/_document.jsx`, which also has configuration for the HTML pages
 to be rendered. You can add things or remove things from the tags in `<Head />` or `<Body />` section as per your needs
 allowing you to freely change how the template is going to be rendered or customized.
 
@@ -156,7 +156,7 @@ And It will auto integrate the things as needed in the project.
   ```sh
   npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
   ```
-- Next, generate your tailwind.config.js and postcss.config.js files:
+- Next, generate your `tailwind.config.js` and `postcss.config.js` files:
   ```sh
   npx tailwindcss init -p
   ```
