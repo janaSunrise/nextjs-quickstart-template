@@ -32,22 +32,28 @@ If applicable, add screenshots to help explain your problem.
 - NodeJS version: [e.g. 14.17.4]
 
 <details>
-<summary>`package.json` file</summary>
+
+<summary>Package.json file</summary>
 
 <p>
+
 ```json
-[Your package.json file contents here]
+<Your package.json file contents here>
 ```
+
 </p>
 </details>
 
 <details>
+
 <summary>Output log</summary>
 
 <p>
+
 ```log
 [Log output here]
 ```
+
 </p>
 </details>
 
