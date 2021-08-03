@@ -56,11 +56,9 @@ This project has the following structure and folders to organize and quickly add
   It has the following contents:
 
   ```js
-  <Navbar />;
-  {
-    children;
-  }
-  <Footer />;
+  <Navbar />
+  {children}
+  <Footer />
   ```
 
   Meta tags and components is also located in the components. You can adjust to add / remove things as
@@ -79,11 +77,9 @@ This project has the following structure and folders to organize and quickly add
 In `components/` folder, we'll have a layout Components which will return following things:
 
 ```js
-<Navbar />;
-{
-  children;
-}
-<Footer />;
+<Navbar />
+{children}
+<Footer />
 ```
 
 To have navbar, footer for each page, we'll add them, Remember `Navbar.jsx` and `Footer.jsx` are
