@@ -189,7 +189,9 @@ And It will auto integrate the things as needed in the project.
 
 Docker is an easy way of containerizing and delivering your applications quickly and easily, in a
 convenient way. It's really simple to get started with this, with docker handling all the installation
-and other tasks. Then, run `docker-compose up` after getting the project and config ready.
+and other tasks. You need docker and docker-compose in order to run this.
+
+Run `docker-compose up` after getting the project and config ready.
 
 **Docker mini guide:**
 
