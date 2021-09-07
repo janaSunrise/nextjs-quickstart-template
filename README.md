@@ -36,8 +36,8 @@ This section is aimed to make you familiar with the structure, and how to quickl
 
 ### Linting and styling
 
-This project has ESLint, Prettier, SCSS linting setup for code, This code has been linted now, and you're free to use it
-or remove it as per your need.
+This project has SCSS for styling and ESLint, Prettier, SCSS linting setup for code, This code has been linted now, 
+and you're free to use it or remove it as per your need.
 
 ### Structure
 
@@ -98,7 +98,7 @@ const MyApp = ({ Component, pageProps }) => {
 };
 ```
 
-And after having the layout attribute, It'll be like this
+And after having the layout attribute, it'll be like this
 
 ```js
 return (
