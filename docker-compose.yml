@@ -1,8 +1,5 @@
 version: '3.8'
 
-networks:
-  common-shared-network:
-
 services:
   app:
     build:
@@ -16,3 +13,6 @@ services:
     restart: on-failure
     networks:
       - common-shared-network
+
+networks:
+  common-shared-network:

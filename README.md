@@ -79,11 +79,11 @@ This project has the following structure and folders to organize and quickly add
 In `components/` folder, we'll have a layout Components which will return following things:
 
 ```js
-<Navbar />;
-{
-  children;
-}
-<Footer />;
+<div>
+  <Navbar />
+  {children}
+  <Footer />
+</div>
 ```
 
 To have navbar, footer for each page, we'll add them, Remember `Navbar.jsx` and `Footer.jsx` are
@@ -129,13 +129,6 @@ they're Auto added to all the pages.
 There is also configuration added for document in `pages/_document.jsx`, which also has configuration for the HTML pages
 to be rendered. You can add things or remove things from the tags in `<Head />` or `<Body />` section as per your needs
 allowing you to freely change how the template is going to be rendered or customized.
-
-#### Scaffolding
-
-This is a way to integrate things quickly into the project with the help of a simple script. I have provided a script
-called `scaffold.js` to do the scaffolding, and it supports only CSS frameworks as of now. It's pretty easy to get
-started by integrating CSS frameworks in the projects. Here's the command to do that: `node scaffold.js <CSS-FRAMEWORK>`
-And It will auto integrate the things as needed in the project.
 
 ## ✌️ Integrating CSS Frameworks in this project
 
@@ -214,7 +207,7 @@ making the commit message.
 
 ## Show your support
 
-We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and also be sure to
+We love people's support in growing and improving. Be sure to leave a 🌟 if you like the project and also be sure to
 contribute, if you're interested!
 
 ## ▶ Links

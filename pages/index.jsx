@@ -1,6 +1,6 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import styles from "../styles/Home.module.scss";
+import styles from '../styles/Home.module.scss';
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{" "}
+          Get started by editing{' '}
           <code className={styles.code}>pages/index.jsx</code>
         </p>
 
@@ -57,7 +57,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>

@@ -1,5 +1,12 @@
-.next/
+# Node modules
 node_modules/
+
+# Next build
+.next/
+
+# Package lock
 package-lock.json
+
+# Others
 coverage/
 __snapshots__/
