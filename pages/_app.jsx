@@ -1,4 +1,5 @@
 import SEO from '@bradgarropy/next-seo';
+
 import Layout from '../components/Layout';
 
 import '../styles/globals.scss';

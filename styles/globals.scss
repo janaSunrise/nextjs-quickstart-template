@@ -1,3 +1,8 @@
+// Reset
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
@@ -13,8 +18,4 @@ a {
     text-decoration: none;
     color: purple;
   }
-}
-
-* {
-  box-sizing: border-box;
 }
