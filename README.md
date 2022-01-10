@@ -4,7 +4,7 @@ A simple and amazing template for your next NextJS project, to get you started i
 
 ## Installation and Quickstart
 
-Install the dependencies real quick:
+Install the dependencies for the project first,
 
 ```bash
 npm install
@@ -12,7 +12,7 @@ npm install
 yarn install
 ```
 
-First, run the development server:
+And, run the development server,
 
 ```bash
 npm run dev
@@ -55,12 +55,10 @@ This project has the following structure and folders to organize and quickly add
   code DRY. It already has a `Layout.jsx` file, containing the navbar and footer linked by default.
   It has the following contents:
 
-  ```js
-  <Navbar />;
-  {
-    children;
-  }
-  <Footer />;
+  ```jsx
+  <Navbar />
+  {children}
+  <Footer />
   ```
 
   Meta tags and components is also located in the components. You can adjust to add / remove things as
@@ -76,9 +74,9 @@ This project has the following structure and folders to organize and quickly add
 
 #### Components
 
-In `components/` folder, we'll have a layout Components which will return following things:
+In `components/` folder, we'll have a layout component which will return following element,
 
-```js
+```jsx
 <div>
   <Navbar />
   {children}
@@ -87,7 +85,7 @@ In `components/` folder, we'll have a layout Components which will return follow
 ```
 
 To have navbar, footer for each page, we'll add them, Remember `Navbar.jsx` and `Footer.jsx` are
-components too in components folder, which we import in `Layout.jsx` and use, Then in `pages/_app.jsx`
+components in components folder, which we import in `Layout.jsx` and use in `pages/_app.jsx`
 which contains the basic structure of an App.
 
 By default, it's like this
@@ -212,8 +210,8 @@ contribute, if you're interested!
 
 ## ▶ Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Official documentation to learn and refer about Next.js 
+- [Learn Next.js](https://nextjs.org/learn) - An interactive tutorial for Next.js
 
 ## License
 
