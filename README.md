@@ -1,6 +1,6 @@
 # NextJS Quickstart Template
 
-A simple and easy to use boilerplate for your next NextJS project, to get you started in NO time.
+A simple and amazing template for your next NextJS project, to get you started in no time.
 
 ## Installation and Quickstart
 
